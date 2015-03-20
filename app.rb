@@ -1,6 +1,8 @@
 require "sinatra"
 require "haml"
 
-get "/" do
-  haml :index
+class App < Sinatra::Application
+  get "/" do
+    haml :index
+  end
 end
