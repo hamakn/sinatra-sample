@@ -1,0 +1,14 @@
+%html
+  %head
+    %title
+      = @title || "mySandbox"
+    %link{ rel: "stylesheet", href: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" }
+    %link{ rel: "stylesheet", href: stylesheet_path("style") }
+    %script{ type: "text/javascript", src: "//code.jquery.com/jquery-1.11.0.min.js" }
+    %script{ type: "text/javascript", src: "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js" }
+  %body
+    %nav.navbar.navbar-default.navbar-fixed-top
+      %div.container
+        %div.navbar-header
+          %a.navbar-brand{ href: "/" } mySandbox
+    != yield
