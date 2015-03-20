@@ -25,4 +25,9 @@ class App < Sinatra::Application
     @title = "foo"
     haml :foo
   end
+
+  get "/react" do
+    @title = "react"
+    erb :react
+  end
 end
