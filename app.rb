@@ -30,4 +30,9 @@ class App < Sinatra::Application
     @title = "react"
     erb :react
   end
+
+  get "/react2" do
+    @title = "react"
+    erb :react2
+  end
 end
