@@ -20,4 +20,9 @@ class App < Sinatra::Application
   get "/" do
     haml :index
   end
+
+  get "/foo" do
+    @title = "foo"
+    haml :foo
+  end
 end
